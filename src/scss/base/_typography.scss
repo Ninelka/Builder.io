@@ -1,0 +1,53 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('NexaRegular.eot?#iefix') format('embedded-opentype'),
+        url('NexaRegular.woff') format('woff'),
+        url('NexaRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa';
+    src: url('NexaHeavy.eot?#iefix') format('embedded-opentype'),
+        url('NexaHeavy.woff') format('woff'),
+        url('NexaHeavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa';
+    src: url('Nexa-Bold.eot');
+    src: local('Nexa Bold'), local('Nexa-Bold'),
+        url('Nexa-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Nexa-Bold.woff') format('woff'),
+        url('Nexa-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+$MainFont: 'Montserrat', sans-serif;
+$HeadlinesFont: 'Sintony', sans-serif;
+$ButtonFont: 'Nexa', sans-serif;
+
+/* colors */
+
+$white: #ffffff;
+$OceanBlue: #44c5c7;
+$purple: #8e75bd;
+$DarkGray: #a3adb5;
+$LightGray: #b7bfc5;
+
+/* content */
+
+html {
+	font-size: 16px;
+	font-family: $MainFont;
+}
