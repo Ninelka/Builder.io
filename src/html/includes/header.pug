@@ -1,0 +1,10 @@
+block header
+	header
+		.header
+			.header__container
+				.layout__wrapper
+					ul.header__menu
+						- var list = ["Sign Up", "Log In", "Support"]
+							each item in list
+								li.header__menu-item
+									a(href="#", class="header__menu-link")= item

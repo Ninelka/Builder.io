@@ -1,0 +1,36 @@
+.header {
+    &__container {
+        background-image: url('../img/banner-bg-noise.png');
+        background-size: cover;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        padding: 57px 0 13px 0;
+        margin: 0;
+    }
+
+    &__menu-item {
+        margin-right: 26px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__menu-link {
+        text-decoration: none;
+        color: $menu-link;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 600;
+
+        &:hover {
+            color: $white;
+            padding-bottom: 13px;
+            border-bottom: 2px solid $white;
+        }
+    }
+}
