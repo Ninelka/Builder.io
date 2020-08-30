@@ -1,0 +1,45 @@
+.footer {
+    &__container {
+        background-color: $white;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__title {
+        @include make-h5;
+        color: $text-secondary;
+        text-transform: uppercase;
+        padding: 58px 0 20px;
+        margin: 0;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 600;
+        color: $text-secondary;
+
+        &:not(:last-child) {
+            margin-bottom: 7px;
+        }
+    }
+
+    &__icon {
+        background-image: url(../img/pencil.png);
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 44px;
+        margin: 12px auto;
+    }
+}
