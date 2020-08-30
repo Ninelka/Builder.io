@@ -1,0 +1,38 @@
+.demo {
+    &__container {
+        background-color: $white;
+        text-align: center;
+    }
+
+    &__actions {
+        margin: 35px 0 66px;
+    }
+
+    &__start-btn {
+        @include btn($size-m);
+        @include btn-primary($primary);
+        margin-right: 21px;
+    }
+
+    &__try-btn {
+        @include btn(172px);
+        @include btn-secondary;
+    }
+
+    &__title {
+        @include make-h3;
+        font-family: $Sintony;
+        font-weight: normal;
+        color: $text-primary;
+        margin: 0 0 12px;
+    }
+
+    &__text {
+        width: 940px;
+        @include P20;
+        font-family: $Nexa-Regular;
+        line-height: 33px;
+        color: $text-secondary;
+        margin: 0 0 103px;
+    }
+}

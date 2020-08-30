@@ -1,0 +1,46 @@
+.advantage {
+    &__container {
+        background-color: $bg-color;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        &::after {
+            content: url('../img/Phone.png');
+            display: block;
+            width: 875px;
+            height: 798px;
+            position: absolute;
+            top: 267px;
+            left: 280px;
+        }
+    }
+
+    &__item {
+        max-width: 520px;
+        margin: 102px 0 0;
+    }
+
+    &__title {
+        @include make-h3;
+        font-family: $Sintony;
+        font-weight: normal;
+        color: $text-primary;
+        margin: 0 0 7px;
+    }
+
+    &__text {
+        line-height: 29px;
+        color: $text-paragraph;
+        margin: 0 0 30px;
+    }
+
+    &__btn {
+        @include btn($size-m);
+        @include btn-primary($primary);
+        margin: 0 0 376px;
+    }
+}
