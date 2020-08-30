@@ -1,0 +1,45 @@
+.feature {
+    &__container {
+        background-color: $bg-color;
+        border: 1px solid $line;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding: 65px 0 164px;
+    }
+
+    &__item {
+        max-width: 355px;
+        text-align: center;
+    }
+
+    &__img {
+        margin: 65px 0;
+    }
+
+    &__title {
+        @include make-h4;
+        font-family: $Sintony;
+        font-weight: normal;
+        color: $text-primary;
+        margin: 0 0 7px;
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 29px;
+        color: $text-primary;
+        margin: 0 0 10px;
+    }
+
+    &__link {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: $link;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 30px;
+    }
+}
