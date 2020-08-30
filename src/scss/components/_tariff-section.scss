@@ -1,0 +1,38 @@
+.tariff {
+    &__container {
+        background-image: url('../img/banner-bg-noise.png');
+        text-align: center;
+    }
+
+    &__title {
+        @include make-h3;
+        font-family: $Sintony;
+        font-weight: normal;
+        color: $white;
+        text-transform: uppercase;
+        padding: 85px 0 3px;
+        margin: 0;
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 29px;
+        color: $white;
+        margin: 0 0 47px;
+    }
+
+    &__actions {
+        padding: 0 0 80px;
+    }
+
+    &__paid-btn {
+        @include btn($size-l);
+        @include btn-primary($secondary);
+        margin-right: 20px;
+    }
+
+    &__free-btn {
+        @include btn($size-l);
+        @include btn-secondary($btn-secondary-bd-color, $btn-secondary-bd-color);
+    }
+}
