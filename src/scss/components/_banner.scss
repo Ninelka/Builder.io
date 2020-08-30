@@ -1,0 +1,36 @@
+.banner {
+    &__container {
+        position: relative;
+        text-align: center;
+        background-image: url('../img/banner-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 52px 0 0;
+    }
+
+    &__title {
+        @include make-h0;
+        color: $white;
+    }
+
+    &__text {
+        @include P20;
+        line-height: 22px;
+        font-family: $Sintony;
+        color: $menu-link;
+        margin: 27px 0;
+    }
+
+    &__btn {
+        @include btn($size-m);
+        @include btn-primary($secondary);
+    }
+
+    &__img {
+        margin: 57px 0 0;
+
+        img {
+            box-shadow: 0px -20px 50px 10px $link;
+        }
+    }
+}
