@@ -1,22 +1,22 @@
 .advantage {
     &__container {
         background-color: $bg-color;
+
     }
 
     &__list {
         display: flex;
         justify-content: space-between;
         position: relative;
+    }
 
-        &::after {
-            content: url('../img/Phone.png');
-            display: block;
-            width: 875px;
-            height: 798px;
-            position: absolute;
-            top: 267px;
-            left: 280px;
-        }
+    &__image {
+        background-image: url('../img/Phone.png');
+        width: 875px;
+        height: 443px;
+        position: absolute;
+        top: 267px;
+        left: 280px;
     }
 
     &__item {
