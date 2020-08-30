@@ -1,0 +1,12 @@
+.join {
+    &__container {
+        background-color: $link;
+        text-align: center;
+    }
+
+    &__btn {
+        @include btn($size-l);
+        @include btn-accent;
+        margin: 45px 0 38px;
+    }
+}

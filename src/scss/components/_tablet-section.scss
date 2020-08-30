@@ -1,0 +1,26 @@
+.tablet {
+    &__background {
+        height: 800px;
+        background-image: url('../img/tablet-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__basement {
+        position: relative;
+        height: 225px;
+        background-color: $white;
+    }
+
+    &__image {
+        position: absolute;
+        bottom: 65px;
+        left: 0;
+        right: 0;
+        width: 753px;
+        height: 885px;
+        background-image: url('../img/ipad.png');
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+}
