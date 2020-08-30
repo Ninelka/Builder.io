@@ -1,0 +1,35 @@
+$size-m: 220px;
+$size-l: 261px;
+$size-full: 100%;
+
+@mixin btn ($size) {
+    width: $size;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $Nexa-Regular;
+    line-height: 21px;
+    padding: 20px 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 1px 1px 0px 0px $white;
+    }
+
+    &:focus {
+        opacity: 0.7;
+        outline: $secondary;
+    }
+}
+
+@mixin btn-primary ($bg-color) {
+    color: $white;
+    background-color: $bg-color;
+}
+
+@mixin btn-secondary {
+    color: #b1bad0;
+    background-color: transparent;
+    border: 2px solid #e7eaf1;
+}

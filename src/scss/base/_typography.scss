@@ -1,7 +1,7 @@
 /* fonts */
 
 @font-face {
-    font-family: 'Nexa';
+    font-family: 'Nexa-Regular';
     src: url('NexaRegular.eot?#iefix') format('embedded-opentype'),
         url('NexaRegular.woff') format('woff'),
         url('NexaRegular.ttf') format('truetype');
@@ -9,7 +9,7 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'Nexa';
+    font-family: 'Nexa-Heavy';
     src: url('NexaHeavy.eot?#iefix') format('embedded-opentype'),
         url('NexaHeavy.woff') format('woff'),
         url('NexaHeavy.ttf') format('truetype');
@@ -17,7 +17,7 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'Nexa';
+    font-family: 'Nexa-Bold';
     src: url('Nexa-Bold.eot');
     src: local('Nexa Bold'), local('Nexa-Bold'),
         url('Nexa-Bold.eot?#iefix') format('embedded-opentype'),
@@ -29,7 +29,9 @@
 
 $Montserrat: 'Montserrat', sans-serif;
 $Sintony: 'Sintony', sans-serif;
-$Nexa: 'Nexa', sans-serif;
+$Nexa-Regular: 'Nexa-Regular', sans-serif;
+$Nexa-Bold: 'Nexa-Bold', sans-serif;
+$Nexa-Heavy: 'Nexa-Heavy', sans-serif;
 
 /* content */
 
