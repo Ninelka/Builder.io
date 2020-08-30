@@ -60,7 +60,7 @@ module.exports = {
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: ".src/css/style.bundle.css",
+			filename: "src/css/style.bundle.css",
 			allChunks: true,
 		}),
 		...PAGES.map(
