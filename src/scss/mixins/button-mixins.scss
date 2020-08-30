@@ -13,10 +13,6 @@ $size-full: 100%;
     border-radius: 3px;
     cursor: pointer;
 
-    &:hover {
-        box-shadow: 1px 1px 0px 0px $white;
-    }
-
     &:focus {
         opacity: 0.7;
         outline: $secondary;
@@ -28,8 +24,8 @@ $size-full: 100%;
     background-color: $bg-color;
 }
 
-@mixin btn-secondary {
-    color: #b1bad0;
+@mixin btn-secondary ($color, $bd-color) {
+    color: $color;
     background-color: transparent;
-    border: 2px solid #e7eaf1;
+    border: 2px solid $bd-color;
 }

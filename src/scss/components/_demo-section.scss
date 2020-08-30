@@ -16,7 +16,7 @@
 
     &__try-btn {
         @include btn(172px);
-        @include btn-secondary;
+        @include btn-secondary($btn-secondary-color, $btn-secondary-bd-color);
     }
 
     &__title {
