@@ -19,9 +19,16 @@ $size-full: 100%;
     }
 }
 
-@mixin btn-primary ($bg-color) {
+@mixin btn-primary {
     color: $white;
-    background-color: $bg-color;
+    background-color: $primary;
+}
+
+@mixin btn-accent {
+    font-family: $Nexa-Bold;
+    font-weight: bold;
+    color: $white;
+    background-color: $secondary;
 }
 
 @mixin btn-secondary ($color, $bd-color) {

@@ -1,6 +1,6 @@
 .tariff {
     &__container {
-        background-image: url('../img/banner-bg-noise.png');
+        background-color: $link;
         text-align: center;
     }
 
@@ -27,7 +27,7 @@
 
     &__paid-btn {
         @include btn($size-l);
-        @include btn-primary($secondary);
+        @include btn-accent;
         margin-right: 20px;
     }
 

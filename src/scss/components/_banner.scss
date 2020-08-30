@@ -23,7 +23,7 @@
 
     &__btn {
         @include btn($size-m);
-        @include btn-primary($secondary);
+        @include btn-accent;
     }
 
     &__img {

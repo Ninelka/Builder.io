@@ -10,7 +10,7 @@
 
     &__start-btn {
         @include btn($size-m);
-        @include btn-primary($primary);
+        @include btn-primary;
         margin-right: 21px;
     }
 

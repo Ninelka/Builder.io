@@ -39,7 +39,7 @@
 
     &__btn {
         @include btn($size-m);
-        @include btn-primary($primary);
+        @include btn-primary;
         margin: 0 0 376px;
     }
 }
