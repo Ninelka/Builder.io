@@ -30,7 +30,8 @@
     &__text {
         width: 940px;
         @include P20;
-        font-family: $Nexa-Regular;
+        // TODO: find mistake with font-family
+        // font-family: $Nexa-Regular;
         line-height: 33px;
         color: $text-secondary;
         margin: 0 0 103px;
