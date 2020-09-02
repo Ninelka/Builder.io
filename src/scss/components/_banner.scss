@@ -28,10 +28,64 @@
     }
 
     &__img {
-        margin: 57px 0 0;
+        position: relative;
+        width: fit-content;
+        margin: 57px auto 0;
+        box-shadow: 0px -20px 50px 10px $link;
 
         img {
-            box-shadow: 0px -20px 50px 10px $link;
+            display: block; // fix the white stripe below image
+        }
+    }
+
+    &__img-caption {
+        position: absolute;
+        display: block;
+        bottom: 54px;
+        left: 60px;
+        color: #f3f3f3;
+        font-family: $Sintony;
+        text-align: left;
+    }
+
+    &__img-caption-title {
+        margin-bottom: 5px;
+    }
+
+    &__img-caption-date {
+        font-size: 9px;
+    }
+
+    &__edit-icon {
+        position: absolute;
+        top: 25px;
+        right: 36px;
+        width: 56px;
+        height: 56px;
+        border-radius: 3px;
+        background-image: url('../img/icon-document-edit.png');
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.7);
+        background-position: 18px center;
+        cursor: pointer;
+    }
+
+    &__like {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        color: $white;
+        bottom: 50px;
+        right: 62px;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 25px;
+            height: 22px;
+            background-image: url('../img/fa-heart-o.png');
+            margin-right: 10px;
         }
     }
 }
