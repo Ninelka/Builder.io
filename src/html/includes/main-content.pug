@@ -28,7 +28,7 @@ block main-content
 					h3.tariff__title Take a look inside
 					p.tariff__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
 					.tariff__actions
-						button.tariff__paid-btn Take my money
+						button.tariff__paid-btn Take my money!
 						button.tariff__free-btn Free Account
 		section
 			.video__container
@@ -39,17 +39,17 @@ block main-content
 				.layout__wrapper
 					.feature__list
 						.feature__item
-							img(src="src/img/fa-area-chart.png", alt="chart icon" class="feature__img")
+							i(class="fa fa-area-chart feature__img" aria-hidden="true")
 							h4.feature__title Pick your layouts
 							p.feature__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 							a(href="#", class="feature__link") Create account here
 						.feature__item
-							img(src="src/img/fa-archive.png", alt="box icon" class="feature__img")
+							i(class="fa fa-archive feature__img" aria-hidden="true")
 							h4.feature__title Export
 							p.feature__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 							a(href="#", class="feature__link") See pricing
 						.feature__item
-							img(src="src/img/fa-arrows-alt.png", alt="crossed arrows icon" class="feature__img")
+							i(class="fa fa-arrows-alt feature__img" aria-hidden="true")
 							h4.feature__title Edit
 							p.feature__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 							a(href="#", class="feature__link") View support documents
@@ -69,7 +69,10 @@ block main-content
 								p.subscription__item-params Export 1 HTML template
 								p.subscription__item-params 15 Layout Options
 								p.subscription__item-params Tweet to get more layouts
-							button.subscription__item-submit Sign up &#10003;
+							button.subscription__item-submit
+								span Sign up
+								span.subscription__item-submit-icon
+									i(class="fa fa-check" aria-hidden="true")
 						.subscription__item-caption
 							span Join
 							|
@@ -82,14 +85,17 @@ block main-content
 							.subscription__item-container
 								.subscription__item-description Great forgiving it a try or the one off web designer
 								h2.subscription__item-price &#36;89
-									sup.subscription__item-price-caption /Yearly
+									sup.subscription__item-price-caption / Yearly
 								p.subscription__item-params Save unlimited layouts
 								p.subscription__item-params Export unlimited HTML templates
 								p.subscription__item-params Over 30 Layout Options & counting
 								p.subscription__item-params New Layouts added monthly
 								p.subscription__item-params Learning Documentation
 								p.subscription__item-params Something else
-							button.subscription__item-submit Sign up &#10003;
+							button.subscription__item-submit
+								span Sign up
+								span.subscription__item-submit-icon
+									i(class="fa fa-check" aria-hidden="true")
 						.subscription__item-caption
 							span Join
 							|
