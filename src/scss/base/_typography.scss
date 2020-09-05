@@ -2,27 +2,29 @@
 
 @font-face {
     font-family: 'Nexa-Regular';
-    src: url('NexaRegular.eot?#iefix') format('embedded-opentype'),
-        url('NexaRegular.woff') format('woff'),
-        url('NexaRegular.ttf') format('truetype');
+    src: url('../fonts/NexaRegular.eot');
+    src: url('../fonts/NexaRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NexaRegular.woff') format('woff'),
+        url('../fonts/NexaRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Nexa-Heavy';
-    src: url('NexaHeavy.eot?#iefix') format('embedded-opentype'),
-        url('NexaHeavy.woff') format('woff'),
-        url('NexaHeavy.ttf') format('truetype');
+    src: url('../fonts/NexaHeavy.eot');
+    src: url('../fonts/NexaHeavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NexaHeavy.woff') format('woff'),
+        url('../fonts/NexaHeavy.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
 @font-face {
     font-family: 'Nexa-Bold';
-    src: url('Nexa-Bold.eot');
-    src: local('Nexa Bold'), local('Nexa-Bold'),
-        url('Nexa-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Nexa-Bold.woff') format('woff'),
-        url('Nexa-Bold.ttf') format('truetype');
+	src: url('../fonts/NexaBold.eot');
+	src: url('../fonts/NexaBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NexaBold.woff2') format('woff2'),
+		url('../fonts/NexaBold.woff') format('woff'),
+		url('../fonts/NexaBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }

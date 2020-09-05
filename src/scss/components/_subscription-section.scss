@@ -47,6 +47,8 @@
             .subscription__item-submit {
                 @include btn($size-full);
                 @include btn-primary;
+                background-image: none;
+                background-color: $btn-secondary-primary-color;
                 margin-top: auto;
             }
         }
@@ -80,15 +82,15 @@
     }
 
     &__item-description {
-        line-height: 20px;
-        font-weight: 600;
+        font-family: $Nexa-Bold;
+        line-height: 1.25;
         color: $card-description;
         margin: 0;
     }
 
     &__item-price {
         @include make-h2;
-        font-weight: bold;
+        font-family: $Nexa-Bold;
         color: $secondary;
     }
 
@@ -101,6 +103,7 @@
     &__item-params {
         border-top: 2px solid $line;
         line-height: 50px;
+        font-family: $Nexa-Bold;
         color: $text-secondary;
         margin: 0;
     }
