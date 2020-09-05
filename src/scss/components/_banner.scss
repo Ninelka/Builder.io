@@ -86,3 +86,13 @@
         margin-right: 12px;
     }
 }
+
+@media screen and (max-width: 958px) {
+    .banner {
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

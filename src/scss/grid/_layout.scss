@@ -4,11 +4,24 @@
 	}
 
 	&__wrapper {
-		width: 1180px;
+		width: 90%;
+		max-width: 1180px;
 		margin: 0 auto;
 
 		&_small {
 			width: 940px;
 		}
 	}
+}
+
+@media screen and (max-width: 958px) {
+    .layout {
+        &__wrapper{
+            width: 100%;
+
+			&_small {
+				width: 100%;
+			}
+        }
+    }
 }

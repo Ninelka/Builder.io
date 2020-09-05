@@ -11,10 +11,13 @@
 
     &__image {
         background-image: url('../img/Phone.webp');
-        width: 875px;
-        height: 444px;
+        background-size: cover;
+        max-width: 860px;
+        max-height: 444px;
+        width: 100%;
+        height: 100%;
         position: absolute;
-        top: 267px;
+        bottom: 0;
         left: 280px;
     }
 
@@ -42,5 +45,23 @@
         @include btn($size-m);
         @include btn-primary;
         margin: 0 0 376px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .advantage {
+        &__image {
+            max-width: 600px;
+            max-height: 333px;
+        }
+    }
+}
+
+@media screen and (max-width: 958px) {
+    .advantage {
+        &__image {
+            max-width: 438px;
+            max-height: 222px;
+        }
     }
 }

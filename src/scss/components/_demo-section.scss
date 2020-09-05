@@ -28,7 +28,7 @@
     }
 
     &__text {
-        width: 940px;
+        max-width: 940px;
         @include P20;
         font-family: $Nexa-Regular;
         line-height: 1.65;
