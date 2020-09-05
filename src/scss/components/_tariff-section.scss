@@ -1,13 +1,11 @@
 .tariff {
     &__container {
-        background-color: $link;
+        background-image: url('../img/banner-bg-noise.png');
         text-align: center;
     }
 
     &__title {
         @include make-h3;
-        font-family: $Sintony;
-        font-weight: normal;
         color: $white;
         text-transform: uppercase;
         padding: 85px 0 3px;
