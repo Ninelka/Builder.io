@@ -26,10 +26,9 @@
     &__item {
         flex-direction: column;
         width: 460px;
+        margin: 0 20px;
 
         &_free {
-            margin-right: 20px;
-
             .subscription__item-submit {
                 @include btn($size-full);
                 @include btn-secondary ($btn-secondary-primary-color, $link);
@@ -74,7 +73,7 @@
     &__item-body {
         display: flex;
         flex-direction: column;
-        height: 550px;
+        min-height: 550px;
         padding: 36px 56px;
         border: 2px solid $btn-secondary-bd-color;
         border-top: none;
@@ -128,5 +127,41 @@
         font-size: 20px;
         text-transform: uppercase;
         margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .subscription {
+        &__title {
+            margin: 40px 12px 0;
+        }
+
+        &__text {
+            margin: 0 12px 32px;
+        }
+
+        &__list {
+            flex-direction: column;
+        }
+
+        &__item {
+            width: 100%;
+            padding: 12px;
+            margin: 0;
+            box-sizing: border-box;
+
+            &_free {
+                margin: 0;
+            }
+        }
+
+        &__item-body {
+            min-height: auto;
+            padding: 24px;
+        }
+
+        &__item-caption {
+            margin-bottom: 40px;
+        }
     }
 }

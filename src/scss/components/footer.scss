@@ -5,7 +5,7 @@
 
     &__row {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     &__title {
@@ -41,5 +41,29 @@
         width: 15px;
         height: 44px;
         margin: 12px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        &__col {
+            margin: 0 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer {
+        &__row {
+            flex-direction: column-reverse;
+        }
+
+        &__col {
+            text-align: center;
+        }
+
+        &__title {
+            padding-top: 32px;
+        }
     }
 }

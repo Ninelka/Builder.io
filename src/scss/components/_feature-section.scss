@@ -6,12 +6,11 @@
 
     &__list {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding: 65px 0 164px;
     }
 
     &__item {
-        max-width: 355px;
         padding: 0 8px;
         text-align: center;
     }
@@ -44,5 +43,18 @@
         font-weight: 600;
         font-size: 15px;
         line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .feature {
+        &__list {
+            flex-direction: column;
+            padding: 32px 0;
+        }
+
+        &__img {
+            margin: 40px 0 24px;
+        }
     }
 }

@@ -24,3 +24,18 @@
         margin: 0 auto;
     }
 }
+
+@media screen and (max-width: 958px) {
+    .tablet {
+
+        &__background {
+            height: 60vh;
+        }
+
+        &__image {
+            width: 300px;
+            height: 400px;
+            background-size: contain;
+        }
+    }
+}

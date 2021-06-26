@@ -17,7 +17,7 @@
         line-height: 22px;
         font-family: $Sintony;
         color: $menu-link;
-        margin: 27px 0;
+        margin: 27px 20px;
     }
 
     &__btn {
@@ -93,6 +93,24 @@
             img {
                 width: 100%;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .banner {
+        &__img-caption {
+            left: 20px;
+            bottom: 32px;
+        }
+
+        &__edit-icon {
+            right: 20px;
+        }
+
+        &__like {
+            right: 20px;
+            bottom: 32px;
         }
     }
 }

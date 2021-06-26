@@ -16,21 +16,29 @@
         font-size: 15px;
         line-height: 29px;
         color: $white;
-        margin: 0 0 47px;
+        margin: 0 12px 47px;
     }
 
     &__actions {
-        padding: 0 0 80px;
+        padding: 0 0 56px;
     }
 
     &__paid-btn {
         @include btn($size-l);
         @include btn-accent;
-        margin-right: 20px;
+        margin: 0 20px 24px 0;
     }
 
     &__free-btn {
         @include btn($size-l);
         @include btn-secondary($btn-secondary-bd-color, $btn-secondary-bd-color);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .tariff {
+        &__paid-btn {
+            margin-right: 0;
+        }
     }
 }
