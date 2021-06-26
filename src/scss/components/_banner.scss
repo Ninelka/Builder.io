@@ -2,7 +2,7 @@
     &__container {
         position: relative;
         text-align: center;
-        background-image: url('../img/banner-bg.png');
+        background-image: url('../../public/img/banner-bg.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -61,7 +61,7 @@
         width: 56px;
         height: 56px;
         border-radius: 3px;
-        background-image: url('../img/icon-document-edit.png');
+        background-image: url('../../public/img/icon-document-edit.png');
         background-repeat: no-repeat;
         background-color: rgba(0, 0, 0, 0.7);
         background-position: 18px center;

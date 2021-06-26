@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const PATHS = {
 	src: path.join(__dirname, "./src"),
-	dist: path.join(__dirname, "./docs"),
+	dist: path.join(__dirname, "./"),
 	assets: "assets/",
 };
 
@@ -56,12 +56,12 @@ module.exports = {
 						options: { sourceMap: true },
 					},
 				],
-			},
+			}
 		],
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: "src/css/style.bundle.css",
+			filename: "css/style.bundle.css",
 			allChunks: true,
 		}),
 		...PAGES.map(
