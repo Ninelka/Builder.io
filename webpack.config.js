@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const PATHS = {
 	src: path.join(__dirname, "./src"),
-	dist: path.join(__dirname, "./dist"),
+	dist: path.join(__dirname, "./docs"),
 	assets: "assets/",
 };
 
@@ -18,6 +18,7 @@ const PAGES = fs
 module.exports = {
 	entry: ["./src/js/index.js", "./src/scss/style.scss"],
 	output: {
+		path: __dirname + '/docs',
 		filename: "./js/bundle.js",
 	},
 	devtool: "source-map",
