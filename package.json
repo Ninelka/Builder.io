@@ -4,13 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
+    "dev": "webpack --mode development && npm run copyAssets",
+    "build": "webpack --mode production && npm run copyAssets",
     "watch": "webpack --mode development --watch",
     "start": "webpack-dev-server --mode development --open",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "copyAssets": "copy-files-from-to",
     "clear": "rm -rf docs"
   },
+  "copyFiles":[
+    {
+      "from": "src/fonts/*",
+      "to": "docs/fonts/"
+    },
+    {
+      "from": "src/img/*",
+      "to": "docs/img/"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ninelka/Builder.io.git"
@@ -26,6 +37,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
+    "copy-files-from-to": "^3.2.0",
     "css-loader": "^4.2.2",
     "html-webpack-plugin": "^4.3.0",
     "mini-css-extract-plugin": "^0.11.0",

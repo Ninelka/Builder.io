@@ -1,44 +1,47 @@
 .tariff {
-    &__container {
-        background-image: url('../../public/img/banner-bg-noise.png');
-        text-align: center;
-    }
+	&__container {
+		background-image: url("../img/banner-bg-noise.png");
+		text-align: center;
+	}
 
-    &__title {
-        @include make-h3;
-        color: $white;
-        text-transform: uppercase;
-        padding: 85px 0 3px;
-        margin: 0;
-    }
+	&__title {
+		@include make-h3;
+		color: $white;
+		text-transform: uppercase;
+		padding: 85px 0 3px;
+		margin: 0;
+	}
 
-    &__text {
-        font-size: 15px;
-        line-height: 29px;
-        color: $white;
-        margin: 0 12px 47px;
-    }
+	&__text {
+		font-size: 15px;
+		line-height: 29px;
+		color: $white;
+		margin: 0 12px 47px;
+	}
 
-    &__actions {
-        padding: 0 0 56px;
-    }
+	&__actions {
+		padding: 0 0 56px;
+	}
 
-    &__paid-btn {
-        @include btn($size-l);
-        @include btn-accent;
-        margin: 0 20px 24px 0;
-    }
+	&__paid-btn {
+		@include btn($size-l);
+		@include btn-accent;
+		margin: 0 20px 24px 0;
+	}
 
-    &__free-btn {
-        @include btn($size-l);
-        @include btn-secondary($btn-secondary-bd-color, $btn-secondary-bd-color);
-    }
+	&__free-btn {
+		@include btn($size-l);
+		@include btn-secondary(
+			$btn-secondary-bd-color,
+			$btn-secondary-bd-color
+		);
+	}
 }
 
 @media screen and (max-width: 425px) {
-    .tariff {
-        &__paid-btn {
-            margin-right: 0;
-        }
-    }
+	.tariff {
+		&__paid-btn {
+			margin-right: 0;
+		}
+	}
 }

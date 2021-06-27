@@ -1,42 +1,42 @@
 .video {
-    &__container {
-        width: 100%;
-        height: 948px;
-        background-image: url('../../public/img/video.webp');
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
+	&__container {
+		width: 100%;
+		height: 948px;
+		background-image: url("../img/video.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
 
-    &__overlay {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: #685195;
-        opacity: 0.8;
-        z-index: 1;
-    }
+	&__overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: #685195;
+		opacity: 0.8;
+		z-index: 1;
+	}
 
-    &__play-btn {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url('../../public/img/play-btn.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
-        z-index: 2;
-    }
+	&__play-btn {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-image: url("../img/play-btn.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+		z-index: 2;
+	}
 }
 
 @media screen and (max-width: 768px) {
-    .video {
-        &__container {
-            height: 50vh;
-        }
-    }
+	.video {
+		&__container {
+			height: 50vh;
+		}
+	}
 }

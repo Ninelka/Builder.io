@@ -1,41 +1,40 @@
 .tablet {
-    &__background {
-        height: 800px;
-        background-image: url('../../public/img/tablet-bg.webp');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+	&__background {
+		height: 800px;
+		background-image: url("../img/tablet-bg.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
-    &__basement {
-        position: relative;
-        height: 225px;
-        background-color: $white;
-    }
+	&__basement {
+		position: relative;
+		height: 225px;
+		background-color: $white;
+	}
 
-    &__image {
-        position: absolute;
-        bottom: 65px;
-        left: 0;
-        right: 0;
-        width: 753px;
-        height: 885px;
-        background-image: url('../../public/img/ipad.webp');
-        background-repeat: no-repeat;
-        margin: 0 auto;
-    }
+	&__image {
+		position: absolute;
+		bottom: 65px;
+		left: 0;
+		right: 0;
+		width: 753px;
+		height: 885px;
+		background-image: url("../img/ipad.webp");
+		background-repeat: no-repeat;
+		margin: 0 auto;
+	}
 }
 
 @media screen and (max-width: 958px) {
-    .tablet {
+	.tablet {
+		&__background {
+			height: 60vh;
+		}
 
-        &__background {
-            height: 60vh;
-        }
-
-        &__image {
-            width: 300px;
-            height: 400px;
-            background-size: contain;
-        }
-    }
+		&__image {
+			width: 300px;
+			height: 400px;
+			background-size: contain;
+		}
+	}
 }

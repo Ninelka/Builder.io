@@ -1,116 +1,116 @@
 .banner {
-    &__container {
-        position: relative;
-        text-align: center;
-        background-image: url('../../public/img/banner-bg.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+	&__container {
+		position: relative;
+		text-align: center;
+		background-image: url("../img/banner-bg.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
-    &__title {
-        @include make-h0;
-        color: $white;
-    }
+	&__title {
+		@include make-h0;
+		color: $white;
+	}
 
-    &__text {
-        @include P20;
-        line-height: 22px;
-        font-family: $Sintony;
-        color: $menu-link;
-        margin: 27px 20px;
-    }
+	&__text {
+		@include P20;
+		line-height: 22px;
+		font-family: $Sintony;
+		color: $menu-link;
+		margin: 27px 20px;
+	}
 
-    &__btn {
-        @include btn($size-m);
-        @include btn-accent;
-    }
+	&__btn {
+		@include btn($size-m);
+		@include btn-accent;
+	}
 
-    &__img {
-        position: relative;
-        width: fit-content;
-        margin: 57px auto 0;
-        box-shadow: 0px -20px 50px 10px $link;
+	&__img {
+		position: relative;
+		width: fit-content;
+		margin: 57px auto 0;
+		box-shadow: 0px -20px 50px 10px $link;
 
-        img {
-            display: block; // fix the white stripe below image
-        }
-    }
+		img {
+			display: block; // fix the white stripe below image
+		}
+	}
 
-    &__img-caption {
-        position: absolute;
-        display: block;
-        bottom: 54px;
-        left: 60px;
-        color: #f3f3f3;
-        font-family: $Sintony;
-        text-align: left;
-    }
+	&__img-caption {
+		position: absolute;
+		display: block;
+		bottom: 54px;
+		left: 60px;
+		color: #f3f3f3;
+		font-family: $Sintony;
+		text-align: left;
+	}
 
-    &__img-caption-title {
-        margin-bottom: 5px;
-    }
+	&__img-caption-title {
+		margin-bottom: 5px;
+	}
 
-    &__img-caption-date {
-        font-size: 9px;
-    }
+	&__img-caption-date {
+		font-size: 9px;
+	}
 
-    &__edit-icon {
-        position: absolute;
-        top: 25px;
-        right: 36px;
-        width: 56px;
-        height: 56px;
-        border-radius: 3px;
-        background-image: url('../../public/img/icon-document-edit.png');
-        background-repeat: no-repeat;
-        background-color: rgba(0, 0, 0, 0.7);
-        background-position: 18px center;
-        cursor: pointer;
-    }
+	&__edit-icon {
+		position: absolute;
+		top: 25px;
+		right: 36px;
+		width: 56px;
+		height: 56px;
+		border-radius: 3px;
+		background-image: url("../img/icon-document-edit.png");
+		background-repeat: no-repeat;
+		background-color: rgba(0, 0, 0, 0.7);
+		background-position: 18px center;
+		cursor: pointer;
+	}
 
-    &__like {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        font-family: $Sintony;
-        font-size: 18px;
-        font-weight: bold;
-        color: $white;
-        bottom: 50px;
-        right: 62px;
-        cursor: pointer;
-    }
+	&__like {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		font-family: $Sintony;
+		font-size: 18px;
+		font-weight: bold;
+		color: $white;
+		bottom: 50px;
+		right: 62px;
+		cursor: pointer;
+	}
 
-    &__like-icon {
-        font-size: 25px;
-        margin-right: 12px;
-    }
+	&__like-icon {
+		font-size: 25px;
+		margin-right: 12px;
+	}
 }
 
 @media screen and (max-width: 958px) {
-    .banner {
-        &__img {
-            img {
-                width: 100%;
-            }
-        }
-    }
+	.banner {
+		&__img {
+			img {
+				width: 100%;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 425px) {
-    .banner {
-        &__img-caption {
-            left: 20px;
-            bottom: 32px;
-        }
+	.banner {
+		&__img-caption {
+			left: 20px;
+			bottom: 32px;
+		}
 
-        &__edit-icon {
-            right: 20px;
-        }
+		&__edit-icon {
+			right: 20px;
+		}
 
-        &__like {
-            right: 20px;
-            bottom: 32px;
-        }
-    }
+		&__like {
+			right: 20px;
+			bottom: 32px;
+		}
+	}
 }

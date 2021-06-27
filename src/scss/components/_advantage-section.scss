@@ -1,89 +1,89 @@
 .advantage {
-    &__container {
-        background-color: $bg-color;
-    }
+	&__container {
+		background-color: $bg-color;
+	}
 
-    &__list {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        padding: 0 0 376px;
-    }
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		padding: 0 0 376px;
+	}
 
-    &__image {
-        background-image: url('../../public/img/Phone.webp');
-        background-size: cover;
-        max-width: 860px;
-        max-height: 444px;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        bottom: 0;
-        left: 280px;
-    }
+	&__image {
+		background-image: url("../img/Phone.webp");
+		background-size: cover;
+		max-width: 860px;
+		max-height: 444px;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 280px;
+	}
 
-    &__item {
-        max-width: 520px;
-        margin: 102px 20px 0;
-    }
+	&__item {
+		max-width: 520px;
+		margin: 102px 20px 0;
+	}
 
-    &__title {
-        @include make-h3;
-        font-family: $Sintony;
-        font-weight: normal;
-        color: $text-primary;
-        margin: 0 0 7px;
-    }
+	&__title {
+		@include make-h3;
+		font-family: $Sintony;
+		font-weight: normal;
+		color: $text-primary;
+		margin: 0 0 7px;
+	}
 
-    &__text {
-        line-height: 29px;
-        color: $text-paragraph;
-        text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
-        margin: 0 0 30px;
-    }
+	&__text {
+		line-height: 29px;
+		color: $text-paragraph;
+		text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+		margin: 0 0 30px;
+	}
 
-    &__btn {
-        @include btn($size-m);
-        @include btn-primary;
-    }
+	&__btn {
+		@include btn($size-m);
+		@include btn-primary;
+	}
 }
 
 @media screen and (max-width: 1280px) {
-    .advantage {
-        &__image {
-            max-width: 600px;
-            max-height: 333px;
-        }
-    }
+	.advantage {
+		&__image {
+			max-width: 600px;
+			max-height: 333px;
+		}
+	}
 }
 
 @media screen and (max-width: 958px) {
-    .advantage {
-        &__image {
-            max-width: 438px;
-        }
-    }
+	.advantage {
+		&__image {
+			max-width: 438px;
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {
-    .advantage {
-        &__list {
-            flex-direction: column-reverse;
-        }
+	.advantage {
+		&__list {
+			flex-direction: column-reverse;
+		}
 
-        &__item {
-            text-align: center;
-            max-width: 100%;
-            margin-top: 40px;
-        }
+		&__item {
+			text-align: center;
+			max-width: 100%;
+			margin-top: 40px;
+		}
 
-        &__btn {
-            margin-bottom: 40px;
-        }
+		&__btn {
+			margin-bottom: 40px;
+		}
 
-        &__image {
-            width: 100%;
-            left: 0;
-        }
-    }
+		&__image {
+			width: 100%;
+			left: 0;
+		}
+	}
 }
